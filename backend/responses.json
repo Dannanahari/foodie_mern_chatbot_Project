@@ -1,0 +1,10 @@
+{
+    "i am hungry": [
+        "I see you're hungry! Here are some available restaurants: Paradise, Maharaja,Meet & Eat,Happy,SVN Lake Palace",
+        "Please select a restaurant from the list."
+    ],
+    "hello": [
+        "Hello! How can I assist you today?",
+        "Would you like to see the menu or check your order status?"
+    ]
+}
