@@ -14,4 +14,4 @@ export const assets ={
     parcel_icon
 }
 
-export const url = 'https://foodie-backend-x1dn.onrender.com'
+export const url = 'https://foodie-mern-chatbot-project-backend.onrender.com'
