@@ -7,7 +7,7 @@ import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
 import Footer from "./components/Footer/Footer";
 import LoginPopup from "./components/LoginPopup/LoginPopup";
 import MyOrders from "./pages/MyOrders/MyOrders";
-import Chatbot from "./components/Chatbot"; // Import Chatbot Component
+import Chatbot from "./components/Chatbot/chatbot"; // Import Chatbot Component
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
