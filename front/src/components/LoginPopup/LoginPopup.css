@@ -1,0 +1,140 @@
+/* ======= Background Blur Effect ======= */
+.login-popup {
+    position: fixed; /* Fixed to cover the full screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    backdrop-filter: blur(5px); /* Adds blur effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* ======= Login Popup Container ======= */
+.login-popup-container {
+    width: max(23vw, 330px);
+    color: #808080;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    animation: fadeIn 0.5s ease-in-out;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* ======= Title & Close Button Styling ======= */
+.login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.login-popup-title img {
+    width: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.login-popup-title img:hover {
+    transform: scale(1.1);
+}
+
+/* ======= Input Fields ======= */
+.login-popup-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-popup-inputs input {
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.login-popup-inputs input:focus {
+    border-color: tomato;
+    box-shadow: 0px 0px 5px rgba(255, 99, 71, 0.5);
+}
+
+/* ======= Login Button Styling ======= */
+.login-popup-container button {
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    color: white;
+    background: tomato;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.login-popup-container button:hover {
+    background: #e74c3c;
+    box-shadow: 0px 5px 15px rgba(255, 99, 71, 0.5);
+}
+
+.login-popup-container button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+/* ======= Terms & Conditions ======= */
+.login-popup-condition {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 12px;
+    color: #676767;
+}
+
+.login-popup-condition input {
+    margin-top: 4px;
+}
+
+/* ======= Register Link ======= */
+.login-popup p span {
+    color: tomato;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.login-popup p span:hover {
+    text-decoration: underline;
+}
+
+/* ======= Animation ======= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ======= Responsive Design ======= */
+@media (max-width: 768px) {
+    .login-popup-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
