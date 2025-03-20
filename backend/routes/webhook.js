@@ -1,5 +1,5 @@
 import express from "express";
-import Food from "../models/Food.js"; // Import your Food model
+import Food from "../models/FoodItem.js"; // Import your Food model
 
 const router = express.Router();
 
